@@ -16,7 +16,6 @@ class _AddUserViewState extends State<AddUserView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     if (widget.user != null) {
       controller.nameController().text = widget.user![Key_Name];
