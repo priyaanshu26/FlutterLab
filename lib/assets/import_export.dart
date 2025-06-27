@@ -9,6 +9,8 @@ export 'strings.dart';
 export 'package:lab/Lab02/profile_card/profile_card_model.dart';
 export 'package:lab/Lab02/profile_card/profile_card_controller.dart';
 export 'package:lab/Lab02/profile_card/profile_card_view.dart';
+export 'package:lab/Lab02/signup_form.dart';
+export 'package:lab/Lab02/favorite_and_unfavorite.dart';
 //endregion
 
 //region LAB 3
