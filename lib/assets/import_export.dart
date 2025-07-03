@@ -3,6 +3,9 @@
 export 'package:flutter/material.dart';
 export 'package:get/get.dart';
 export 'strings.dart';
+export 'package:sqflite/sqflite.dart';
+export 'package:path/path.dart';
+
 //endregion
 
 //region LAB 2
@@ -35,4 +38,17 @@ export 'package:lab/lab_4/custom_bottom_sheet_getx.dart';
 export 'package:lab/lab_5/navigate_btw_two_screens.dart';
 export 'package:lab/lab_5/navigate_named_route.dart';
 export 'package:lab/lab_5/pass_data_btw_two_screens.dart';
+//endregion
+
+
+//region LAB 7
+export 'package:lab/lab_7/controller.dart';
+export 'package:lab/lab_7/crud.dart';
+//endregion
+
+//regin LAB 9
+export 'package:lab/lab_9/database.dart';
+export 'package:lab/lab_9/student_controller.dart';
+export 'package:lab/lab_9/student_model.dart';
+export 'package:lab/lab_9/student_view.dart';
 //endregion
