@@ -47,7 +47,6 @@ export 'package:lab/lab_7/crud.dart';
 //endregion
 
 //region LAB 8
-export 'package:lab/lab_8/excep_handling_try_catch.dart';
 //endregion
 
 //region LAB 9
