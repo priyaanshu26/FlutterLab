@@ -1,3 +1,4 @@
+import 'package:lab/lab_9/student_add.dart';
 import '../assets/import_export.dart';
 
 class StudentListPage extends StatelessWidget {
@@ -15,25 +16,41 @@ class StudentListPage extends StatelessWidget {
           final s = controller.students[index];
           return ListTile(
             title: Text("${s.name} (${s.enrollment})"),
-            subtitle: Text("${s.branch} | Sem: ${s.sem} | ${s.city}"),
+            subtitle: Text("Branch ${s.branch} | Sem: ${s.sem} | City ${s.city}"),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.favorite_border),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => AddStudent(student: s)),
+                    );
+                    },
+                ),
+                IconButton(
+                  icon: Icon(Icons.delete),
+                  onPressed: () {
+                    controller.deleteStudent(s.enrollment);
+                    },
+                ),
+              ],
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => StudentListPage()),
+              );
+              controller.fetchStudents();
+
+          }
           );
         },
       )),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          controller.insertStudent(
-            Student(
-              enrollment: DateTime.now().millisecondsSinceEpoch,
-              name: "New Student",
-              age: 20,
-              branch: "CSE",
-              gender: "Male",
-              sem: 5,
-              university: "GTU",
-              city: "Ahmedabad",
-            ),
-          );
         },
       ),
     );

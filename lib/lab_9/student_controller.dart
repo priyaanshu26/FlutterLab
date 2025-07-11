@@ -20,5 +20,15 @@ class StudentController extends GetxController {
     final result = await db.query('TBL_Student');
     return result.map((e) => Student.fromMap(e)).toList();
   }
+  Future<void> deleteStudent(int enrollment) async {
+    final db = await DBHelper.db;
+    await db.delete('TBL_Student', where: 'enrollment = ?', whereArgs: [enrollment]);
+    fetchStudents();
+  }
+  Future<void> updateStudent(Student student) async {
+    final db = await DBHelper.db;
+    await db.update('TBL_Student', student.toMap(), where: 'enrollment = ?', whereArgs: [student.enrollment]);
+    fetchStudents();
+  }
 
 }

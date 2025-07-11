@@ -46,9 +46,20 @@ export 'package:lab/lab_7/controller.dart';
 export 'package:lab/lab_7/crud.dart';
 //endregion
 
-//regin LAB 9
+//region LAB 8
+export 'package:lab/lab_8/excep_handling_try_catch.dart';
+//endregion
+
+//region LAB 9
 export 'package:lab/lab_9/database.dart';
 export 'package:lab/lab_9/student_controller.dart';
 export 'package:lab/lab_9/student_model.dart';
 export 'package:lab/lab_9/student_view.dart';
+//endregion
+
+//region LAB 10
+export 'package:lab/lab_10/s_model.dart';
+export 'package:lab/lab_10/s_db_helper.dart';
+export 'package:lab/lab_10/s_controller.dart';
+export 'package:lab/lab_10/s_view.dart';
 //endregion
