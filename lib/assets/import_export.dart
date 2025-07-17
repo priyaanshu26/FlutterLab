@@ -9,11 +9,11 @@ export 'package:path/path.dart';
 //endregion
 
 //region LAB 2
-export 'package:lab/Lab02/profile_card/profile_card_model.dart';
-export 'package:lab/Lab02/profile_card/profile_card_controller.dart';
-export 'package:lab/Lab02/profile_card/profile_card_view.dart';
-export 'package:lab/Lab02/signup_form.dart';
-export 'package:lab/Lab02/favorite_and_unfavorite.dart';
+export 'package:lab/Lab_2/profile_card/profile_card_model.dart';
+export 'package:lab/Lab_2/profile_card/profile_card_controller.dart';
+export 'package:lab/Lab_2/profile_card/profile_card_view.dart';
+export 'package:lab/Lab_2/signup_form.dart';
+export 'package:lab/Lab_2/favorite_and_unfavorite.dart';
 //endregion
 
 //region LAB 3

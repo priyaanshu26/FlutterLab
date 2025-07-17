@@ -1,19 +1,21 @@
-class A{
-  int a=5;
-  int b=6;
-}
-class B extends A{
-  void add(){
-    print(a+b);
+class A {
+  int a;
+
+  A({this.a = 100});
+
+  void printValue() {
+    print("Value of a is $a");
   }
 }
-class C extends B{
-  void multiply(){
-    print(a*b);
+
+
+class B extends A {
+  B(int a){
+     super.a = a;
   }
 }
-void main(){
-  C obj=new C();
-  obj.add();
-  obj.multiply();
+
+void main() {
+  B b = B(200);
+  b.printValue();
 }
