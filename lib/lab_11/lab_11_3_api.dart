@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_3_1.dart';
+import 'lab_11_3_schema.dart';
 
 class PostController extends GetxController {
   var allPosts = <Post>[].obs;           // All fetched posts

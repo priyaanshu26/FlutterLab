@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_2_2.dart';
+import 'lab_11_2_api.dart';
 
 void main() {
   runApp(const ApiStateApp());

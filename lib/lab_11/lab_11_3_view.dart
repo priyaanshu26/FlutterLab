@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_3_2.dart';
+import 'lab_11_3_api.dart';
 
 void main() {
   runApp(const SearchApiApp());

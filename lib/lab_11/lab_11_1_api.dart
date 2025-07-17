@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_1_1.dart';
+import 'lab_11_1_schema.dart';
 
 class PostController extends GetxController with StateMixin<List<Post>> {
   var posts = <Post>[].obs;

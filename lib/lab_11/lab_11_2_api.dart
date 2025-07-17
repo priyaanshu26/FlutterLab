@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_2_1.dart';
+import 'lab_11_2_schema.dart';
 
 enum ApiState { loading, success, error }
 

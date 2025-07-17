@@ -1,5 +1,5 @@
 import '../assets/import_export.dart';
-import 'lab_11_1_2.dart';
+import 'lab_11_1_api.dart';
 
 void main() {
   runApp(const GetXApiApp());
